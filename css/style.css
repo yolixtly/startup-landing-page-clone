@@ -1,15 +1,15 @@
-body { 
-	 -webkit-font-smoothing: antialiased ;
-	 font-family: 'Roboto', sans-serif ;
-	font-size: 1em ;
-	color: #838994 ; 
-	letter-spacing: 0.03em;
-	word-spacing: .05em ;
+html {
+	box-sizing: border-box;
 }
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 /*Typography Design*/
 .top-navegation {
 	background-color: white ;
 	border-bottom: 0.07em solid gray ;
+	
 	
 }
 .top-navegation > .content {
@@ -17,22 +17,33 @@ body {
 	height: 4.37em;
 	margin: auto 0em ;
 	background-color: white ;
+	word-spacing: 1em;
+
 }
 .content > .logo {
 	margin-left: 16em;
 	height: 4.35em;
 }
-.top-navegation .links > .active {
+.top-navegation .links .active {
 	color: #4c5058;
 	font-weight: 500 ;
 }
-ls {
+.top-navegation .links{
 	float: right ;
-	padding: 0em .9em;
+	font-family: 'Roboto', sans-serif ;
+	font-size: 1em ;
+	color: #838994 ; 
 	margin-top: 1.5em ;
-	margin-left: 0.5em ;
+	letter-spacing: 0.03em ;
+	-webkit-font-smoothing: antialiased ;
 }
-ls:hover {
+.top-navegation .links li {
+	display: inline-block;
+	margin-left: 1.5em ;
+	margin-top: 1.5em ;
+
+}
+.top-navegation .links li:hover {
 	cursor: pointer;
 	color: #333333;
 }
