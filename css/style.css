@@ -1,0 +1,9 @@
+.top-navegation {
+	background-color: black ;
+}
+.top-navegation > .content {
+	width: 60em ;
+	height: 4.37em;
+	margin: auto 0em ;
+	background-color: white ;
+}
