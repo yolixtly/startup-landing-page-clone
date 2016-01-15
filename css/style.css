@@ -4,13 +4,13 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-
-/*Typography Design*/
+body {
+	font-family: 'Roboto', sans-serif ;
+}
+/*Top-navegation stye*/
 .top-navegation {
 	background-color: white ;
 	border-bottom: 0.07em solid gray ;
-	
-	
 }
 .top-navegation > .content {
 	width: 60em ;
@@ -30,7 +30,6 @@ html {
 }
 .top-navegation .links{
 	float: right ;
-	font-family: 'Roboto', sans-serif ;
 	font-size: 1em ;
 	color: #838994 ; 
 	margin-top: 1.5em ;
@@ -46,4 +45,19 @@ html {
 .top-navegation .links li:hover {
 	cursor: pointer;
 	color: #333333;
+}
+/*Section style*/
+.introduction {
+	margin:0 15em;
+	text-align: center;
+	padding: 5em 5em ; 
+	color: white ;
+	background-color: gray ;
+	font-weight: lighter;
+}
+.introduction .title {
+	font-size: 3em ;
+}
+.introduction .subtitle {
+	font-size: 1.5em ;
 }
