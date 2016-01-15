@@ -1,9 +1,38 @@
+body { 
+	 -webkit-font-smoothing: antialiased ;
+	 font-family: 'Roboto', sans-serif ;
+	font-size: 1em ;
+	color: #838994 ; 
+	letter-spacing: 0.03em;
+	word-spacing: .05em ;
+}
+/*Typography Design*/
 .top-navegation {
-	background-color: black ;
+	background-color: white ;
+	border-bottom: 0.07em solid gray ;
+	
 }
 .top-navegation > .content {
 	width: 60em ;
 	height: 4.37em;
 	margin: auto 0em ;
 	background-color: white ;
+}
+.content > .logo {
+	margin-left: 16em;
+	height: 4.35em;
+}
+.top-navegation .links > .active {
+	color: #4c5058;
+	font-weight: 500 ;
+}
+ls {
+	float: right ;
+	padding: 0em .9em;
+	margin-top: 1.5em ;
+	margin-left: 0.5em ;
+}
+ls:hover {
+	cursor: pointer;
+	color: #333333;
 }
