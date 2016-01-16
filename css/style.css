@@ -11,13 +11,17 @@ body {
 .top-navegation {
 	background-color: white ;
 	border-bottom: 0.07em solid gray ;
+	position: fixed;
+	width: 100% ;
+	
+
 }
 .top-navegation > .content {
 	width: 60em ;
 	height: 4.37em;
 	margin: auto 0em ;
 	background-color: white ;
-	word-spacing: 1em;
+	padding: 0em;
 
 }
 .content > .logo {
@@ -54,12 +58,14 @@ body {
 	background-size: cover;
 	height: 46rem,
 }
-.introduction .content {
+.content {
 	margin:0 15em;
 	text-align: center;
-	padding: 5em 5em ; 
-	color: white ; 
+	padding: 5em 2em ; 
 	font-weight: lighter;
+}
+.introduction .content {
+	color: white;
 }
 button {
 	background-color: #f15a29 ;
@@ -73,15 +79,12 @@ button {
 	font-size: 1.2em ;
 }
 /*Section 2 style*/
-.section2 {
-	margin:0 15em;
-	text-align: center;
-	padding: 5em 5em ; 
-	color: black; 
-	font-weight: lighter;
-	word-spacing: .05em ;
-
-}
-.section2 .options {
-	padding-left: 1em ;
+.content .devices {
+	width: 33% ;
+	display: inline-block;
+	/*styles to assit with debbuging*/
+	border: .09em solid black ;
+	box-sizing: border-box;
+	height: 4em ;
+	margin-right: -.2em ;
 }
