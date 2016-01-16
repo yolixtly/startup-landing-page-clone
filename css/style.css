@@ -48,16 +48,27 @@ body {
 }
 /*Section style*/
 .introduction {
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	height: 46rem,
+}
+.introduction .content {
 	margin:0 15em;
 	text-align: center;
 	padding: 5em 5em ; 
-	color: white ;
-	background-color: gray ;
+	color: white ; 
 	font-weight: lighter;
 }
-.introduction .title {
-	font-size: 3em ;
-}
-.introduction .subtitle {
-	font-size: 1.5em ;
+button {
+	background-color: #f15a29 ;
+	border-color: #f15a29;
+	width: 10rem; 
+	color: white ;
+	text-shadow: none;
+	padding: 1em 1.5em;
+	border-style: none;
+	border-radius: .5em ;
+	font-size: 1.2em ;
 }
