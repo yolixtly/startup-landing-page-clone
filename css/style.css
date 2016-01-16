@@ -46,7 +46,7 @@ body {
 	cursor: pointer;
 	color: #333333;
 }
-/*Section style*/
+/*Section 1 style*/
 .introduction {
 	background-image: url('../images/background.jpg');
 	background-repeat: no-repeat;
@@ -71,4 +71,17 @@ button {
 	border-style: none;
 	border-radius: .5em ;
 	font-size: 1.2em ;
+}
+/*Section 2 style*/
+.section2 {
+	margin:0 15em;
+	text-align: center;
+	padding: 5em 5em ; 
+	color: black; 
+	font-weight: lighter;
+	word-spacing: .05em ;
+
+}
+.section2 .options {
+	padding-left: 1em ;
 }
