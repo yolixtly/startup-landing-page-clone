@@ -1,116 +1,219 @@
+/*
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+/*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+html {
+/*Typography Criteria for the entire page, that is why it is placed in 'Body tag'*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased ;
+	line-height: 1;
+  	margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-body {
-	font-family: 'Roboto', sans-serif ;
-}
-/*Top-navegation stye*/
+/*Navegation section*/
+
 .top-navegation {
-	background-color: white ;
-	border-bottom: 0.07em solid gray ;
-	position: fixed;
-	width: 100% ;
-	
+	position: fixed ;
+	width: 100%;
+	border-bottom: .09em solid #ddd ;
+	background-color: #fff;
+	z-index: 9999;
+	display: block;
+	/*animation width -->I have not figure it out yet!??*/
+}
+.top-navegation .content {
+	height: 4.375rem;
+}
+/*.CONTENT APPLIES FOR all the sections PAGE*/
+.content {
+	margin: 0 auto;
+	padding: 0 .935rem;
+	min-width: 27.5rem;
+	/*debuging width but not belonging to original karma*/
+	width: 60% ;
+}
 
+.top-navegation .logo {
+	height: 4.375rem;
 }
-.top-navegation > .content {
-	width: 60em ;
-	height: 4.37em;
-	margin: auto 0em ;
-	background-color: white ;
-	padding: 0em;
-
-}
-.content > .logo {
-	margin-left: 16em;
-	height: 4.35em;
-}
-.top-navegation .links .active {
-	color: #4c5058;
-	font-weight: 500 ;
-}
-.top-navegation .links{
-	float: right ;
-	font-size: 1em ;
-	color: #838994 ; 
-	margin-top: 1.5em ;
-	letter-spacing: 0.03em ;
-	-webkit-font-smoothing: antialiased ;
+.top-navegation .links {
+	font-size: 1.04rem ;
+	float: right;
+	margin-top: 1.7rem;
+	color: #838994;
 }
 .top-navegation .links li {
 	display: inline-block;
-	margin-left: 1.5em ;
-	margin-top: 1.5em ;
-
+	margin-left: 1.563rem ;
+	
 }
 .top-navegation .links li:hover {
 	cursor: pointer;
 	color: #333333;
-}
-/*Section 1 style*/
-.introduction {
-	background-image: url('../images/background.jpg');
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: cover;
-	height: 46rem,
-}
-.content {
-	margin:0 15em;
-	text-align: center;
-	padding: 5em 2em ; 
-	font-weight: lighter;
-}
-.introduction .content {
-	color: white;
-}
-button {
-	background-color: #f15a29 ;
-	border-color: #f15a29;
-	width: 10rem; 
-	color: white ;
-	text-shadow: none;
-	padding: 1em 1.5em;
-	border-style: none;
-	border-radius: .5em ;
-	font-size: 1.2em ;
-}
-/*Section 2 style*/
-.cases {
-	background-color: white ;
-	overflow: hidden;
-	padding-bottom: 5rem;
-}
-.cases h2 {
-	font-size: 3rem;
-	margin: 1.67rem 0rem 3.13rem ;
-	font-weight: 300 ;
-}
-.devices {
-	list-style-type: none;
-	text-align: center ; 
-	}
-.cases .content {
-	margin-top: 1rem; 
-	color: black ;
-	text-align: center ;
-	margin-bottom: 1rem ;
-	width: 33% ;
-	display: inline-block;
-	/*styles to assit with debbuging*/
-	box-sizing: border-box;
-	height: 4em ;
 	
 }
+.top-navegation .links> .active {
+	color: #4c5058 ;
+	font-weight: 500 ;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
 
-/*Footer style*/
-footer 
-{
+/*Introduction section*/
+
+.introduction {
+	background-image: url('../images/background.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover ;
+	height: 45.938rem;
+	overflow: auto;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem ;
+	font-size: 3.125rem ;
+}
+.introduction h1, .introduction h3 {
+	color: white;
 	text-align: center ;
+	font-weight: 300 ;
+	margin-bottom: 0 ;
 }
-footer .content {
-	padding: 1rem 5rem;
+.introduction h3 {
+	font-size: 1.563rem;
+	margin-top: 1.25rem;
 }
+.introduction .buttons {
+    color: white ;
+    text-align: center ;
+    margin-top: 1.563rem ;
+    margin-left: 40% ;
+ }
+ button {
+	width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    display: block;
+    margin: 2rem auto;
+    color: white;
+}
+.introduction button:hover {
+	background-color: #994029;
+}
+
+/*CASES SECTION*/
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+  }
+
+.cases .devices > li {
+	width: 33.33%;
+	display: inline-block;
+	float: left;
+}
+.cases .content {
+	margin-top: 7.875rem;
+	text-align: center ;
+	color: #1d1e21;
+}
+.cases .content h2 {
+	font-size: 2.75rem ;
+	margin: 1.625rem 0 3.125rem; 
+	font-weight: 300 ;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+    
+ }
+.cases .caption {
+	margin: 1rem 1rem;
+}
+
+/*FOOTER SECTION*/
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+
+.social .icons {
+	list-style-type: none ;
+	padding: 0 0;
+}
+.social .icons > li {
+     border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 0.25rem 3px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+
+  }
+  .social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+ }
+  .social h5 {
+  	font-size: 1rem;
+  	font-weight: 400 ;
+  }
+  .social .copy {
+     font-size: .9rem;
+     font-weight: 300;
+  	 color: #838994;
+  }
+  
+ .social hr{
+ 	border: 0;
+ 	border-top: 1px solid #eaebec;
+ 	margin: 1.313rem 0;
+ }
+ 
+ 
+ 
+ /*********************************/
+ 
+footer, h5 {
+ 	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+ }
